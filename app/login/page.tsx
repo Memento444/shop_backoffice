@@ -85,11 +85,7 @@ export default function LoginPage() {
                 className="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-slate-200 p-1"
                 aria-label={showPassword ? "ซ่อนรหัสผ่าน" : "แสดงรหัสผ่าน"}
               >
-                {showPassword ? (
-                  <EyeOff className="w-4 h-4" />
-                ) : (
-                  <Eye className="w-4 h-4" />
-                )}
+                {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
               </button>
             </div>
           </div>
@@ -119,15 +115,11 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <div className="pt-2 border-t border-gray-100 dark:border-slate-800 space-y-2 text-center">
+        <div className="pt-2 border-t border-gray-100 dark:border-slate-800 text-center">
           <div className="inline-flex items-center gap-1.5 text-[11px] font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-2.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>ปลอดภัย: มีเฉพาะเจ้าของร้านเท่านั้นที่เข้าได้</span>
+            <span>ระบบความปลอดภัยเฉพาะเจ้าของร้าน (Owner Access Only)</span>
           </div>
-
-          <p className="text-[11px] text-gray-400 dark:text-slate-500">
-            💡 รหัสผ่านตั้งต้นของระบบคือ <code className="px-1.5 py-0.5 rounded bg-gray-100 dark:bg-slate-800 font-mono text-emerald-600 dark:text-emerald-400 font-bold">mama2026</code>
-          </p>
         </div>
       </div>
     </div>
