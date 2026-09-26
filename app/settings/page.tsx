@@ -166,7 +166,8 @@ export default function SettingsPage() {
               <span>สถานะ: เข้าสู่ระบบในฐานะเจ้าของร้านเรียบร้อยแล้ว</span>
             </div>
             <p className="text-[11px] text-gray-500 dark:text-slate-400 leading-relaxed">
-              บุคคลภายนอกที่เปิดลิงก์เว็บเข้ามาจะติดหน้าจอเข้าสู่ระบบ และไม่สามารถเข้าถึง ดู หรือแก้ไขข้อมูลยอดขายและเงินลงทุนของร้านได้เด็ดขาด
+              คนอื่นที่เปิดลิงก์เว็บเข้ามาจะติดหน้าต่าง Login และไม่สามารถดูหรือแก้ไขข้อมูลยอดขายได้
+              รหัสผ่านเริ่มต้นคือ <code className="font-bold text-emerald-600 dark:text-emerald-400">mama2026</code> (สามารถปรับเปลี่ยนได้ใน Environment Variables)
             </p>
           </div>
 
